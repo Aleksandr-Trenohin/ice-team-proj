@@ -3,8 +3,19 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base
+@import './base/common';
+
+// components
+@import './components/section';
+@import './components/container';
+@import './components/button';
+
+// layout
 @import './layout/hero-header';
 @import './layout/products';
 @import './layout/about';
