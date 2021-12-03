@@ -1,3 +1,31 @@
-.section__title {
-  color: blueviolet;
+.section--advantages {
+  padding: 39px 20px 97px 20px;
 }
+
+.advantages__item {
+  width: 230px;
+  }
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+.advantages__lable {
+  display: block;
+  width: 98px;
+  height: 56px;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.advantages__description {
+font-family: DM Sans;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.66;
+color: #000000;
+}
+
+

@@ -1,3 +1,18 @@
 .button {
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: var(--secondary-button-color);
+  background-color: var(--primary-button-color);
+  border-radius: 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--primary-button-color);
+    background-color: var(--accent-color);
+  }
 }
