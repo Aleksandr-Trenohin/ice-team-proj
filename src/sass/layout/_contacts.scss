@@ -1,3 +1,19 @@
-.section__title {
-  // color: chartreuse;
+.contacts {
+  padding-top: 44px;
+  padding-bottom: 66px;
+  background: linear-gradient (var(--primary-text-color) 16%, var(--primary-bg-color) 0%);
+
+  &__item {
+    min-width: 220px;
+    height: 427px;
+    background: var(--primary-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      max-width: 220px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
