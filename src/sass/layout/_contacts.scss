@@ -172,10 +172,6 @@
   }
 }
 
-.contacts__background-img {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
   .contacts__btn-item {
     &:not(:last-child) {
