@@ -1,3 +1,49 @@
-<header>
-  <p class="logo">icecream</p>
+<header class="header">
+  <div class="container header-container">
+    <a classs="header-link" href="">
+      <img class="header-link__logo" src="./images/icons/header/logo.svg" alt="">
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">About us</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-burger" type="button">
+      <svg class="header-burger__icon">
+        <use href="./images/icons/sprite.svg#icon-header-burger"></use>
+      </svg>
+    </button>
+    <button class="button header-button" type="button">
+      Buy now
+      <svg class="button__icon">
+        <use href="./images/icons/sprite.svg#icon-button-icon"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
+<section class="hero">
+  <div class="container">
+    <img class="hero__icecream-image" src="./images/hero/hero-2/mobile/hero-1-mobile.png" alt="icecream">
+    <img class="hero__background-image" src="./images/hero/hero-3/mobile/hero-2-mobile.png" alt="background">
+    <h1 class="hero__title">ice cream
+      made with
+      <span>passion</span></h1>
+    <button class="button hero-button hero-button--red" type="button">Products</button>
+    <button class="button hero-button hero-button--white" type="button">How it’s made?</button>
+  </div>
+</section>
