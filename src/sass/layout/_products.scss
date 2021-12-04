@@ -1,3 +1,71 @@
+.products__label {
+  display: block;
+  text-align: center;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
 .section__title {
-  color: gold;
+  margin-top: 15px;
+  margin-bottom: 31px;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.products__list {
+  margin-top: 0;
+}
+.products__item {
+  display: block;
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+.product-1 {
+  background: #ffb8ca;
+}
+.product-2 {
+  background: #f0d1a5;
+}
+.product-3 {
+  background: #c2e297;
+}
+.products__item-name {
+  padding-top: 161px;
+  margin-bottom: 66px;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.products__item-description {
+  padding-left: 41px;
+  padding-right: 39px;
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.description__button-open {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  border-style: none;
 }
