@@ -1,3 +1,116 @@
-.section__title {
-  color: blueviolet;
+.section--advantages {
+  background: var(--primary-bg-color);
+
+  padding-top: 39px;
+  padding-bottom: 97px;
+
+  @media screen and (min-width: 480px) {
+  padding-top: 66px;
+  padding-bottom: 140px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  padding-top: 100px;
+  padding-bottom: 139px;
+  }
 }
+
+.advantages__list {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -30px;
+    }
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    }  
+}
+
+.advantages__item {
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+  width: 180px;
+  margin: 30px;
+  flex-basis: calc((100% - 120px) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+  
+}
+.advantages__item::before {
+  content: "";
+  display: block;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 16px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__item--milk::before {
+  background-image: url(/images/advantages/icon1.png);
+}
+.advantages__item--fruits::before {
+  background-image: url(/images/advantages/icon2.png);
+}
+.advantages__item--ice::before {
+  background-image: url(/images/advantages/icon3.png);
+}
+
+.advantages__lable {
+  display: block;
+  width: 98px;
+  margin-bottom: 11px;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.14;
+    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    font-size: 58px;
+    line-height: 1.14;
+    }
+  
+}
+.advantages__description {
+font-family: DM Sans;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.66;
+color: var(--second-text-color);
+
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+  line-height: 1.71;
+  }
+@media screen and (min-width: 768px) {
+  font-size: 16px;
+  line-height: 1.75;
+  }
+}
+
+

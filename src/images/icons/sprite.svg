@@ -1,0 +1,17 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-header-burger" viewBox="0 0 46 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-button-icon" viewBox="0 0 22 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.574 3.2l12.88 12.8-12.88 12.8"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
+</symbol>
+<symbol id="icon-right" viewBox="0 0 32 32">
+<path fill="#FFF" style="fill: var(--color1, #FFF)" d="M16 2.667c7.353 0 13.333 5.981 13.333 13.333s-5.98 13.333-13.333 13.333c-7.352 0-13.333-5.981-13.333-13.333s5.981-13.333 13.333-13.333z"></path>
+<path fill="#D41443" style="fill: var(--color1, #D41443)" d="M14.076 10.373c0.255 0 0.511 0.096 0.707 0.291l4.648 4.627c0.182 0.181 0.294 0.432 0.294 0.709s-0.112 0.527-0.294 0.709v0l-4.649 4.629c-0.181 0.18-0.43 0.291-0.705 0.291-0.552 0-1-0.448-1-1 0-0.277 0.113-0.528 0.294-0.709l3.939-3.92-3.939-3.92c-0.181-0.181-0.292-0.431-0.292-0.707 0-0.552 0.447-0.999 0.999-1h0z"></path>
+</symbol>
+</defs>
+</svg>
