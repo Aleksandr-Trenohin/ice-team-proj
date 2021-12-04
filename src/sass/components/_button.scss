@@ -1,5 +1,5 @@
 .button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
 
@@ -8,11 +8,25 @@
   border-radius: 22px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
     color: var(--primary-button-color);
-    background-color: var(--accent-color);
+    background-color: var(--secondary-button-color);
+  }
+}
+
+.button__icon {
+  stroke: var(--accent-color);
+  margin-left: 14px;
+  width: 7px;
+  height: 9px;
+
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .button:focus &,
+  .button:hover & {
+    stroke: #FFFFFF;
   }
 }
