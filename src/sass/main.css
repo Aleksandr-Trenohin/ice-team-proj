@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding: 30px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.logo {
+  color: khaki;
+}
+
+.section__title {
+  color: gold;
+}
+
+.section__title {
+  color: aqua;
+}
+
+.section__title {
+  color: blueviolet;
+}
+
+.section__title {
+  color: fuchsia;
+}
+
+.section__title {
+  color: darkmagenta;
+}
+
+.section__title {
+  color: chartreuse;
+}
+
+.footer {
+  color: hotpink;
+}
+/*# sourceMappingURL=main.css.map */

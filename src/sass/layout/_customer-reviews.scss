@@ -1,3 +1,93 @@
-.section__title {
-  // color: darkmagenta;
+/*.section__title {
+
+
+}*/
+.customer-item {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+/*.customer-icon {
+  
+}*/
+.dots {
+  color: #c7133e;
+
+  font-size: 40px;
+}
+.quotes {
+  fill: currentColor;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: -1;
+}
+.text-decoration {
+  background: #fafafa;
+  z-index: 1;
+  padding: 35px 56px;
+}
+.text-underline {
+  background: repeating-linear-gradient(#bbb 1px, transparent 2px, transparent 31px);
+  z-index: 2;
+}
+.customer-item__text {
+  color: black;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  display: block;
+  @media screen {
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  color: #d9d9d9;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #d31342;
+}
+.swiper-pagination .swiper-pagination-bullet:first-child {
+  mask: url('../images/review/home 1.svg') no-repeat;
+  -webkit-mask: url('../images/review/home 1.svg') no-repeat;
+  border-radius: 0;
 }
