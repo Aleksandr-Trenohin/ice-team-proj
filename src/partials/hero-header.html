@@ -37,13 +37,127 @@
   </div> <!-- container -->
 </header> <!-- header -->
 <section class="hero">
-  <div class="container">
-    <img class="hero__icecream-image" src="./images/hero/hero-2/mobile/hero-1-mobile.png" alt="icecream">
-    <img class="hero__background-image" src="./images/hero/hero-3/mobile/hero-2-mobile.png" alt="background">
+  <div class="container hero-container">
     <h1 class="hero__title">ice cream
       made with
       <span>passion</span></h1>
-    <button class="button hero-button hero-button--red" type="button">Products</button>
-    <button class="button hero-button hero-button--white" type="button">How it’s made?</button>
+    <ul class="">
+      <li>
+        <p>16</p>
+        <p>cafes</p>
+      </li>
+      <li>
+        <p>23</p>
+        <p>food trucks</p>
+      </li>
+    </ul>
+    <ul class="hero-list">
+      <li class="hero-list__item">
+        <button class="button hero-list__button hero-list__button--red" type="button">Products</button>
+      </li>
+      <li class="hero-list__item">
+        <button class="button hero-list__button hero-list__button--white" type="button">How it’s made?</button>
+      </li>
+    </ul>
+    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et</p>
+    <button class="hero-button" type="button">
+      <svg class="hero-button__icon">
+        <use href="./images/icons/sprite.svg#icon-right"></use>
+      </svg>
+    </button>
+    <!-- <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-1/desktop/hero-1-desktop.webp 1x,
+      ./images/hero/hero-1/desktop/hero-1-desktop@2x.webp 2x
+      " />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-1/desktop/hero-1-desktop.png 1x,
+      ./images/hero/hero-1/desktop/hero-1-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-1/tablet/hero-1-tablet.webp 1x,
+      ./images/hero/hero-1/tablet/hero-1-tablet@2x.webp 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-1/tablet/hero-1-tablet.png 1x,
+      ./images/hero/hero-1/tablet/hero-1-tablet@2x.png 2x
+      " />
+      <img class="hero__image-milk" src="#" alt="milk">
+    </picture>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-2/desktop/hero-2-desktop.webp 1x,
+      ./images/hero/hero-2/desktop/hero-2-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-2/desktop/hero-2-desktop.png 1x,
+      ./images/hero/hero-2/desktop/hero-2-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-2/tablet/hero-2-tablet.webp 1x,
+      ./images/hero/hero-2/tablet/hero-2-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-2/tablet/hero-2-tablet.png 1x,
+      ./images/hero/hero-2/tablet/hero-2-tablet@2x.png 2x
+      " />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-2/mobile/hero-1-mobile.webp 1x,
+      ./images/hero/hero-2/mobile/hero-1-mobile@2x.webp 2x
+      " type="image/webp" />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-2/mobile/hero-1-mobile.png 1x,
+      ./images/hero/hero-2/mobile/hero-1-mobile@2x.png 2x
+      " />
+      <img class="hero__image-icecream" src="#" alt="icecream">
+    </picture>
+
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-3/desktop/hero-3-desktop.webp 1x,
+      ./images/hero/hero-3/desktop/hero-3-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-3/desktop/hero-3-desktop.png 1x,
+      ./images/hero/hero-3/desktop/hero-3-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-3/tablet/hero-3-tablet.webp 1x,
+      ./images/hero/hero-3/tablet/hero-3-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-3/tablet/hero-3-tablet.png 1x,
+      ./images/hero/hero-3/tablet/hero-3-tablet@2x.png 2x
+      " />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-3/mobile/hero-2-mobile.webp 1x,
+      ./images/hero/hero-3/mobile/hero-2-mobile@2x.webp 2x
+      " type="image/webp" />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-3/mobile/hero-2-mobile.png 1x,
+      ./images/hero/hero-3/mobile/hero-2-mobile@2x.png 2x
+      " />
+      <img class="hero__image-background" src="#" alt="background">
+    </picture>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-4/desktop/hero-4-desktop.webp 1x,
+      ./images/hero/hero-4/desktop/hero-4-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-4/desktop/hero-4-desktop.png 1x,
+      ./images/hero/hero-4/desktop/hero-4-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-4/tablet/hero-4-tablet.webp 1x,
+      ./images/hero/hero-4/tablet/hero-4-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-4/tablet/hero-4-tablet.png 1x,
+      ./images/hero/hero-4/tablet/hero-4-tablet@2x.png 2x
+      " />
+      <img class="hero__image-girl" src="#" alt="girl-eat-icecream">
+    </picture> -->
   </div> <!-- container -->
 </section> <!-- section -->
