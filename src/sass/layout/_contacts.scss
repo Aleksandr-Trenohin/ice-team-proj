@@ -298,71 +298,71 @@
     text-align: left;
     margin-left: -30px;
     width: 1050px;
+
+    &__item {
+      min-width: 330px;
+      height: 572px;
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+    }
+
+    &__wrapper {
+      padding-left: 43px;
+      padding-bottom: 62px;
+    }
+
+    &__city {
+      font-size: 16px;
+      line-height: 1.88;
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 1.81;
+    }
+
+    &__schedule {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      min-width: 234px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__period:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__days {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+
+    &__time {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+
+    &__buttons {
+      margin-top: 86px;
+    }
+
+    &__btn-one {
+      padding: 14px 35px;
+    }
+    &__btn {
+      padding: 14px 39px;
+    }
+
+    &__icon {
+      margin-left: 14px;
+    }
   }
-}
-
-.contacts__item {
-  min-width: 330px;
-  height: 572px;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-}
-
-.contacts__wrapper {
-  padding-left: 43px;
-  padding-bottom: 62px;
-}
-
-.contacts__city {
-  font-size: 16px;
-  line-height: 1.88;
-  margin-top: 32px;
-  margin-bottom: 10px;
-}
-
-.contacts__description {
-  font-size: 16px;
-  line-height: 1.81;
-}
-
-.contacts__schedule {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  min-width: 234px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contacts__period:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.contacts__days {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.contacts__time {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.contacts__link {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.contacts__buttons {
-  margin-top: 86px;
-}
-
-.contacts__btn-one {
-  padding: 14px 35px;
-}
-.contacts__btn {
-  padding: 14px 39px;
-}
-
-.contacts__icon {
-  margin-left: 14px;
 }
