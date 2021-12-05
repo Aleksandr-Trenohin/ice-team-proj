@@ -1,51 +1,154 @@
-/*.section__title {
-
-
-}*/
 .customer-item {
   display: flex;
   flex-direction: column;
-  color: black;
 }
-/*.customer-icon {
-  
-}*/
-.dots {
-  color: #c7133e;
 
-  font-size: 40px;
-}
-.quotes {
-  fill: currentColor;
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  z-index: -1;
-}
-.text-decoration {
-  background: #fafafa;
-  z-index: 1;
-  padding: 35px 56px;
-}
-.text-underline {
-  background: repeating-linear-gradient(#bbb 1px, transparent 2px, transparent 31px);
-  z-index: 2;
-}
-.customer-item__text {
+%review-text {
+  font-weight: 500;
   color: black;
   font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 31px;
   text-align: center;
-  display: block;
-  @media screen {
+  letter-spacing: 0.04em;
+}
+
+.customer-item__icon {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 15px;
   }
 }
 
-.swiper-pagination {
+.customer-item__box {
   position: relative;
+  margin: auto;
+  height: auto;
+  background-color: #fafafa;
+  width: 100%;
+  z-index: 1;
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    margin-bottom: 52px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 926px;
+    padding: 32px 50px;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: -16px;
+    left: 0;
+    background-image: url(../images/review/quotes.svg);
+    color: #e1e1e1;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+}
+
+.customer-item__text {
+  @extend%review-text;
+  font-size: 12px;
+  line-height: 2.55em;
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    width: 157px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16em;
+    width: 460px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.86em;
+    width: 750px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
+  }
+}
+.customer-item__info {
+  @extend%review-text;
+  font-size: 14px;
+  line-height: 1.86em;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/review/dots.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+      margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.swiper-pagination {
   color: #d9d9d9;
 }
 .swiper {
@@ -74,8 +177,8 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100%;*/
   object-fit: cover;
 }
 
@@ -85,9 +188,7 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #d31342;
-}
-.swiper-pagination .swiper-pagination-bullet:first-child {
-  mask: url('../images/review/home 1.svg') no-repeat;
-  -webkit-mask: url('../images/review/home 1.svg') no-repeat;
+  mask: url('../images/review/home.svg') no-repeat;
+  -webkit-mask: url('../images/review/home.svg') no-repeat;
   border-radius: 0;
 }
