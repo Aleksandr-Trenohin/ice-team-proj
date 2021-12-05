@@ -106,14 +106,14 @@
   position: absolute;
   width: 249px;
   height: 252px;
-  background-image: url(../images/product-images/product-3-mobile.png);
+  // background-image: url(../images/product-images/product-3-mobile.png);
   left: 15px;
   bottom: 346px;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .product-3::before {
-      background-image: url(../images/product-images/product-3-mobile-2x.png);
-    }
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .product-3::before {
+  //     background-image: url(../images/product-images/product-3-mobile-2x.png);
+  //   }
+  // }
 }
 .products__item-name {
   display: block;
