@@ -1,10 +1,42 @@
 .about {
+  position: relative;
   padding-top: 125px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
   }
 
   background-color: var(--primary-bg-color);
+}
+.about__bg {
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media screen and (max-width: 767px) {
+    top: 766px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    min-height: 133px;
+    background-image: url(../images/about/milk-splashes.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-splashes-2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    top: 342px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    min-height: 534px;
+    background-image: url(../images/about/milk-splashes-desktop.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-splashes-desktop-2x.png);
+    }
+  }
 }
 
 .about__wrap {
@@ -25,6 +57,8 @@
 }
 
 .about__content {
+  position: relative;
+  z-index: 2;
   margin-top: 46px;
   margin-left: auto;
 
@@ -95,18 +129,32 @@
   width: 176px;
   min-height: 44px;
 
-  // font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
-  color: var(--secondary-button-color);
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.31;
   }
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-button-color);
+    background-color: #ecebeb;
+  }
+}
+.button__icon {
+  margin-left: 12px;
+
+  // width: 7px;
+  // height: 10px;
+  .button:focus &,
+  .button:hover & {
+    stroke: var(--secondary-button-color);
+  }
+
+  // fill: currentColor;
 }
