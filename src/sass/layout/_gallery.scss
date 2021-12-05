@@ -1,3 +1,9 @@
-.section__title {
-  // color: fuchsia;
+.gallery {
+  margin-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 121px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 123px;
+  }
 }
