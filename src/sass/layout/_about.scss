@@ -1,3 +1,160 @@
-.section__title {
-  color: aqua;
+.about {
+  position: relative;
+  padding-top: 125px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+  }
+
+  background-color: var(--primary-bg-color);
+}
+.about__bg {
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media screen and (max-width: 767px) {
+    top: 766px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    min-height: 133px;
+    background-image: url(../images/about/milk-splashes.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-splashes-2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    top: 342px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    min-height: 534px;
+    background-image: url(../images/about/milk-splashes-desktop.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-splashes-desktop-2x.png);
+    }
+  }
+}
+
+.about__wrap {
+  margin-top: 26px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 55px;
+  }
+}
+
+.about__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__content {
+  position: relative;
+  z-index: 2;
+  margin-top: 46px;
+  margin-left: auto;
+
+  width: 220px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    margin-left: 17px;
+
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    // margin-top: 51px;
+    margin-left: 74px;
+
+    width: 463px;
+  }
+}
+.about__text--visible {
+  margin-bottom: 27px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--second-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+.about__text {
+  margin-bottom: 17px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--third-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+
+    font-size: 14px;
+    line-height: 1.94;
+  }
+}
+
+.about__button {
+  width: 176px;
+  min-height: 44px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-button-color);
+    background-color: #ecebeb;
+  }
+}
+.button__icon {
+  margin-left: 12px;
+
+  // width: 7px;
+  // height: 10px;
+  .button:focus &,
+  .button:hover & {
+    stroke: var(--secondary-button-color);
+  }
+
+  // fill: currentColor;
 }

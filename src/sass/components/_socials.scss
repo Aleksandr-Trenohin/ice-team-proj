@@ -1,0 +1,28 @@
+.socials-list {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-bottom: 46px;
+}
+
+.socials-list__item {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: #fea5bb;
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+}
+.socials-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  &:hover,
+  &:focus .socials-list__item {
+    background-color: var(--accent-color);
+  }
+}

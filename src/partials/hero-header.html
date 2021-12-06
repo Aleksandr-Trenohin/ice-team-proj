@@ -1,3 +1,171 @@
-<header>
-  <p class="logo">icecream</p>
-</header>
+<!-- header -->
+<header class="header">
+  <div class="container header-container">
+    <a classs="header-link" href="">
+      <img class="header-link__logo" src="./images/icons/header/logo.svg" alt="">
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">About us</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-buttons">
+      <li class="header-buttons__item">
+        <button class="header-buttons__burger" type="button">
+          <svg class="header-buttons__icon">
+            <use href="./images/icons/sprite.svg#icon-header-burger"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="header-buttons__item">
+        <button class="button header-buttons__button" type="button">
+          Buy now
+          <svg class="button__icon">
+            <use href="./images/icons/sprite.svg#icon-button-icon"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div> <!-- container -->
+</header> <!-- header -->
+<section class="hero">
+  <div class="container hero-container">
+    <h1 class="hero__title">ice cream
+      made with
+      <span>passion</span></h1>
+    <ul class="place-list">
+      <li class="place-list__item">
+        <p class="place-list__text place-list__text--big">16</p>
+        <p class="place-list__text">cafes</p>
+      </li>
+      <li class="place-list__item">
+        <p class="place-list__text place-list__text--big">23</p>
+        <p class="place-list__text">food trucks</p>
+      </li>
+    </ul>
+    <ul class="hero-list">
+      <li class="hero-list__item">
+        <button class="button hero-list__button hero-list__button--red" type="button">Products</button>
+      </li>
+      <li class="hero-list__item">
+        <button class="button hero-list__button hero-list__button--white" type="button">How it’s made?</button>
+      </li>
+    </ul>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-1/desktop/hero-1-desktop.webp 1x,
+      ./images/hero/hero-1/desktop/hero-1-desktop@2x.webp 2x
+      " />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-1/desktop/hero-1-desktop.png 1x,
+      ./images/hero/hero-1/desktop/hero-1-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-1/tablet/hero-1-tablet.webp 1x,
+      ./images/hero/hero-1/tablet/hero-1-tablet@2x.webp 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-1/tablet/hero-1-tablet.png 1x,
+      ./images/hero/hero-1/tablet/hero-1-tablet@2x.png 2x
+      " />
+      <img class="hero__image-milk" src="#" alt="milk">
+    </picture>
+    <div class="hero-info">
+      <p class="hero-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut
+        labore et</p>
+      <button class="hero-info__button" type="button">
+        <svg class="hero-info__icon">
+          <use href="./images/icons/sprite.svg#icon-right"></use>
+        </svg>
+      </button>
+    </div>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-2/desktop/hero-2-desktop.webp 1x,
+      ./images/hero/hero-2/desktop/hero-2-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-2/desktop/hero-2-desktop.png 1x,
+      ./images/hero/hero-2/desktop/hero-2-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-2/tablet/hero-2-tablet.webp 1x,
+      ./images/hero/hero-2/tablet/hero-2-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-2/tablet/hero-2-tablet.png 1x,
+      ./images/hero/hero-2/tablet/hero-2-tablet@2x.png 2x
+      " />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-2/mobile/hero-1-mobile.webp 1x,
+      ./images/hero/hero-2/mobile/hero-1-mobile@2x.webp 2x
+      " type="image/webp" />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-2/mobile/hero-1-mobile.png 1x,
+      ./images/hero/hero-2/mobile/hero-1-mobile@2x.png 2x
+      " />
+      <img class="hero__image-icecream" src="#" alt="icecream">
+    </picture>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-3/desktop/hero-3-desktop.webp 1x,
+      ./images/hero/hero-3/desktop/hero-3-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-3/desktop/hero-3-desktop.png 1x,
+      ./images/hero/hero-3/desktop/hero-3-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-3/tablet/hero-3-tablet.webp 1x,
+      ./images/hero/hero-3/tablet/hero-3-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-3/tablet/hero-3-tablet.png 1x,
+      ./images/hero/hero-3/tablet/hero-3-tablet@2x.png 2x
+      " />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-3/mobile/hero-2-mobile.webp 1x,
+      ./images/hero/hero-3/mobile/hero-2-mobile@2x.webp 2x
+      " type="image/webp" />
+      <source media="(max-width: 767px)" srcset="
+      ./images/hero/hero-3/mobile/hero-2-mobile.png 1x,
+      ./images/hero/hero-3/mobile/hero-2-mobile@2x.png 2x
+      " />
+      <img class="hero__image-background" src="#" alt="background">
+    </picture>
+    <picture>
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-4/desktop/hero-4-desktop.webp 1x,
+      ./images/hero/hero-4/desktop/hero-4-desktop@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+      ./images/hero/hero-4/desktop/hero-4-desktop.png 1x,
+      ./images/hero/hero-4/desktop/hero-4-desktop@2x.png 2x
+      " />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-4/tablet/hero-4-tablet.webp 1x,
+      ./images/hero/hero-4/tablet/hero-4-tablet@2x.webp 2x
+      " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+      ./images/hero/hero-4/tablet/hero-4-tablet.png 1x,
+      ./images/hero/hero-4/tablet/hero-4-tablet@2x.png 2x
+      " />
+      <img class="hero__image-girl" src="#" alt="girl-eat-icecream">
+    </picture>
+  </div> <!-- container -->
+</section> <!-- section -->
