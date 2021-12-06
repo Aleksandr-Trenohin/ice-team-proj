@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container header-container">
     <a classs="header-link" href="">
-      <img class="header-link__logo" src="./images/icons/header/logo.svg" alt="">
+      <img class="header-link__logo" src="./images/icons/header/logo.svg" alt="logo">
     </a>
     <nav class="header-nav">
       <ul class="header-nav__list">
@@ -10,22 +10,22 @@
           <a class="header-nav__link" href="">Home</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">About us</a>
+          <a class="header-nav__link" href="#About us">About us</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">How it’s made?</a>
+          <a class="header-nav__link" href="#How it’s made?">How it’s made?</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">Our products</a>
+          <a class="header-nav__link" href="#Products">Our products</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">Contact</a>
+          <a class="header-nav__link" href="#Contact">Contact</a>
         </li>
       </ul>
     </nav>
     <ul class="header-buttons">
       <li class="header-buttons__item">
-        <button class="header-buttons__burger" type="button">
+        <button class="header-buttons__burger" type="button" data-menu-open>
           <svg class="header-buttons__icon">
             <use href="./images/icons/sprite.svg#icon-header-burger"></use>
           </svg>
@@ -59,10 +59,10 @@
     </ul>
     <ul class="hero-list">
       <li class="hero-list__item">
-        <button class="button hero-list__button hero-list__button--red" type="button">Products</button>
+        <a class="hero-list__link hero-list__link--red" href="#Products">Products</a>
       </li>
       <li class="hero-list__item">
-        <button class="button hero-list__button hero-list__button--white" type="button">How it’s made?</button>
+        <a class="hero-list__link hero-list__link--white" href="#How it’s made?">How it’s made?</a>
       </li>
     </ul>
     <picture>
@@ -82,7 +82,7 @@
       ./images/hero/hero-1/tablet/hero-1-tablet.png 1x,
       ./images/hero/hero-1/tablet/hero-1-tablet@2x.png 2x
       " />
-      <img class="hero__image-milk" src="#" alt="milk">
+      <img class="hero__image-milk animate__animated animate__zoomIn" src="#" alt="milk">
     </picture>
     <div class="hero-info">
       <p class="hero-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -119,7 +119,7 @@
       ./images/hero/hero-2/mobile/hero-1-mobile.png 1x,
       ./images/hero/hero-2/mobile/hero-1-mobile@2x.png 2x
       " />
-      <img class="hero__image-icecream" src="#" alt="icecream">
+      <img class="hero__image-icecream animate__animated animate__bounceInDown" src="#" alt="icecream">
     </picture>
     <picture>
       <source media="(min-width: 1280px)" srcset="
@@ -146,7 +146,7 @@
       ./images/hero/hero-3/mobile/hero-2-mobile.png 1x,
       ./images/hero/hero-3/mobile/hero-2-mobile@2x.png 2x
       " />
-      <img class="hero__image-background" src="#" alt="background">
+      <img class="hero__image-background animate__animated animate__zoomIn" src="#" alt="background">
     </picture>
     <picture>
       <source media="(min-width: 1280px)" srcset="
@@ -165,7 +165,7 @@
       ./images/hero/hero-4/tablet/hero-4-tablet.png 1x,
       ./images/hero/hero-4/tablet/hero-4-tablet@2x.png 2x
       " />
-      <img class="hero__image-girl" src="#" alt="girl-eat-icecream">
+      <img class="hero__image-girl animate__animated animate__fadeInRight" src="#" alt="girl-eat-icecream">
     </picture>
   </div> <!-- container -->
 </section> <!-- section -->
