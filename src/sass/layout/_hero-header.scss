@@ -48,12 +48,9 @@
   }
 }
 
-.header-buttons {
-
-}
-
 .header-buttons__item {
   display: inline-block;
+
   @media screen and (min-width: 767px) and (max-width: 1279px) {
     &:last-child {
       margin-left: 30px;
@@ -80,7 +77,7 @@
 }
 
 .header-buttons__button {
-  padding: 12px 37px;
+  padding: 12px 36px;
 
   color: var(--secondary-button-color);
   background-color: var(--primary-button-color);
@@ -97,10 +94,6 @@
   }
 }
 
-// ============= header ============= //
-
-
-
 // ============= hero =============
 .hero {
   padding: 137px 0 160px 0;
@@ -112,20 +105,16 @@
 
   @media screen and (min-width: 768px) {
     position: static;
-    padding: 15px 0 0 0;
+    padding: 15px 0 28px 0;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 84px 0 20px 0;
+    padding: 84px 0 45px 0;
   }
 }
 
 .hero-container {
   @media screen and (min-width: 768px) {
-    position: relative;
-  }
-
-  @media screen and (min-width: 1280px) {
     position: relative;
   }
 }
@@ -187,6 +176,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     top: 0;
     right: 15px;
@@ -254,10 +244,6 @@
   }
 }
 
-.hero-list {
-
-}
-
 .hero-list__item {
   display: inline-block;
 
@@ -274,7 +260,8 @@
   }
 }
 
-.hero-list__button {
+.hero-list__link {
+  display: inline-block;
   position: relative;
   z-index: 3;
 
@@ -282,34 +269,41 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
+  border-radius: 20px;
 
   @media screen and (min-width: 1280px) {
     padding: 12px 22px;
     font-size: 14px;
     line-height: 1.29;
   }
-}
 
-.hero-list__button--red {
-  color: var(--primary-button-color);
-  background-color: var(--secondary-button-color);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
+    transform: scale(1.15);
+  }
+
+  &--red {
+    color: var(--primary-button-color);
+    background-color: var(--secondary-button-color);
+
+    &:focus,
+    &:hover {
+      color: var(--secondary-button-color);
+      background-color: var(--primary-button-color);
+    }
+  }
+
+  &--white {
     color: var(--secondary-button-color);
     background-color: var(--primary-button-color);
-    box-shadow: 0 15px 20px -5px rgba(212, 20, 67, 1);
-  }
-}
 
-.hero-list__button--white {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
-    box-shadow: 0 15px 20px -5px rgba(255, 255, 255, 1);
+    &:focus,
+    &:hover {
+      color: var(--primary-button-color);
+      background-color: var(--secondary-button-color);
+    }
   }
 }
 
@@ -339,6 +333,12 @@
 
 .hero-info__button {
   line-height: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .hero-info__icon {
@@ -363,45 +363,67 @@
   bottom: 0;
   right: 32px;
   z-index: 1;
-
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-
+        bottom: -28px;
+        left: 50%;
+        transform: translateX(-15%);
   }
 
   @media screen and (min-width: 1280px) {
+    bottom: -45px;
     right: 30%;
   }
 }
 
-  .hero__image-background {
-    position: absolute;
-    right: 0;
-    bottom: 75px;
+.hero__image-background {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
 
-    @media screen and (min-width: 768px) {
-
-    }
-
-    @media screen and (min-width: 1280px) {
-          left: 50%;
-          bottom: 42px;
-          transform: translateX(-25%);
-    }
+  @media screen and (min-width: 768px) {
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-25%);
   }
 
-  .hero__image-milk {
-    display: inline-block;
+  @media screen and (min-width: 1280px) {
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-25%);
+  }
+}
+
+.hero__image-milk {
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-top: 56px;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  }
+}
+
+.hero__image-girl {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  .hero__image-girl {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-    bottom: 0;
+    bottom: -28px;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -45px;
     right: -15px;
   }
+
+}

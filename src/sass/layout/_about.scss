@@ -146,15 +146,15 @@
     background-color: #ecebeb;
   }
 }
-.button__icon {
-  margin-left: 12px;
+// .button__icon {
+//   margin-left: 12px;
 
-  // width: 7px;
-  // height: 10px;
-  .button:focus &,
-  .button:hover & {
-    stroke: var(--secondary-button-color);
-  }
+//   // width: 7px;
+//   // height: 10px;
+//   .button:focus &,
+//   .button:hover & {
+//     stroke: var(--secondary-button-color);
+//   }
 
-  // fill: currentColor;
-}
+//   // fill: currentColor;
+// }
