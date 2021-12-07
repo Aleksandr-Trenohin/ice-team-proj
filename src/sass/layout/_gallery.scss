@@ -1,9 +1,32 @@
 .gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
   margin-bottom: 80px;
   @media screen and (min-width: 768px) {
     margin-bottom: 121px;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 123px;
+  }
+}
+
+.gallery__row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Create two equal columns that sits next to each other */
+.gallery__column {
+  padding: 0 4px;
+  align-items: center;
+}
+
+.gallery__item {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.2);
   }
 }
