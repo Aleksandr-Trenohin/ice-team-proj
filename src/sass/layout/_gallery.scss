@@ -16,27 +16,65 @@
 
 /* Create two equal columns that sits next to each other */
 .gallery__column {
-  padding: 0 4px;
+  padding: 0 2px;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .gallery__item {
-  margin-top: 8px;
+  margin-top: 2px;
+  border-radius: 5px;
   vertical-align: middle;
-  border-radius: 20px;
   overflow: hidden;
   &:hover {
     transform: scale(1.2);
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (min-width: 1280px) {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 15px;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+    vertical-align: middle;
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
-.gallery__item-girl {
-  border-radius: 20px;
-}
+/*.gallery__item-girl {
+ 
+}*/
 .gallery__column-5 {
-  margin-bottom: 93px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 93px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 63px;
+  }
 }
 .gallery__column-6 {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35x;
+  }
 }
