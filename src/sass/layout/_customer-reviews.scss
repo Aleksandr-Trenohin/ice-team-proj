@@ -1,5 +1,11 @@
 .section__customer-reviews {
-  padding-bottom: -44px;
+  padding-bottom: 42px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 75px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 88px;
+  }
 }
 
 .customer-item {
