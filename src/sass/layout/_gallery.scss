@@ -1,11 +1,11 @@
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 121px;
+    padding-bottom: 121px;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 123px;
+    padding-bottom: 123px;
   }
 }
 
@@ -57,9 +57,28 @@
     }
   }
 }
-/*.gallery__item-girl {
- 
-}*/
+.gallery__item-girl {
+  max-width: fit-content;
+  width: 39px;
+  height: 39px;
+  @media screen and (min-width: 460px) {
+    max-width: fit-content;
+    width: 59px;
+    height: 59px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: fit-content;
+    width: 95px;
+    height: 95px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: fit-content;
+    width: 145px;
+    height: 145px;
+  }
+}
 .gallery__column-5 {
   margin-bottom: 20px;
   @media screen and (min-width: 1280px) {
