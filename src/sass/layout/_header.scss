@@ -59,12 +59,10 @@
 }
 
 .header-buttons__burger {
-  margin-left: auto;
+  position: relative;
+  z-index: 3;
 
-  @media screen and (min-width: 768px) {
-    position: relative;
-    z-index: 3;
-  }
+  margin-left: auto;
 
   @media screen and (min-width: 1280px) {
     display: none;
