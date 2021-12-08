@@ -1,11 +1,8 @@
 // ============= hero =============
 .hero {
+  position: relative;
   padding: 137px 0 160px 0;
   background-color: #FFB8CA;
-
-  @media screen and (max-width: 767px) {
-    position: relative;
-  }
 
   @media screen and (min-width: 768px) {
     position: static;
@@ -18,13 +15,72 @@
 }
 
 .hero-container {
+  position: relative;
   @media screen and (min-width: 768px) {
-    position: relative;
+
+  }
+}
+
+.hero-background {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-23%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-25%);
+  }
+
+}
+
+.hero-background::after {
+  position: relative;
+  display: inline-block;
+  content: '';
+  background-color: #FFA5BA;
+  border-radius: 50%;
+
+  width: 346px;
+  height: 364px;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero__image-icecream {
+  position: absolute;
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    top: 9px;
+    left: 81px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 110px;
+    bottom: -28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 183px;
+    bottom: -82px;
   }
 }
 
 .hero__title {
-  display: inline-block;
   position: relative;
   z-index: 3;
 
@@ -262,42 +318,6 @@
 }
 
 // ============= image =============
-.hero__image-icecream {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  z-index: 1;
-  overflow: hidden;
-
-  @media screen and (min-width: 768px) {
-    bottom: -28px;
-    left: 50%;
-    transform: translateX(-15%);
-  }
-
-  @media screen and (min-width: 1280px) {
-    bottom: -45px;
-    right: 30%;
-  }
-}
-
-.hero__image-background {
-  position: absolute;
-  right: 0;
-  bottom: 75px;
-
-  @media screen and (min-width: 768px) {
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-25%);
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 50%;
-    bottom: 45px;
-    transform: translateX(-25%);
-  }
-}
 
 .hero__image-milk {
   display: inline-block;
