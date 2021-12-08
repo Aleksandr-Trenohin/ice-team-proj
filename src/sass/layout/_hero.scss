@@ -1,11 +1,13 @@
 // ============= hero =============
 .hero {
-  position: relative;
-  padding: 137px 0 160px 0;
+  padding: 137px 0;
   background-color: #FFB8CA;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+
+  }
 
   @media screen and (min-width: 768px) {
-    position: static;
     padding: 15px 0 28px 0;
   }
 
@@ -16,17 +18,16 @@
 
 .hero-container {
   position: relative;
-  @media screen and (min-width: 768px) {
-
-  }
 }
 
 .hero-background {
   position: absolute;
   @media screen and (max-width: 767px) {
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-35%, -56%);
   }
+
   @media screen and (min-width: 768px) {
     bottom: 0;
     left: 50%;
@@ -38,7 +39,6 @@
     left: 50%;
     transform: translateX(-25%);
   }
-
 }
 
 .hero-background::after {
@@ -47,9 +47,8 @@
   content: '';
   background-color: #FFA5BA;
   border-radius: 50%;
-
   width: 346px;
-  height: 364px;
+  height: 344px;
 
   @media screen and (min-width: 768px) {
     width: 324px;
@@ -65,10 +64,12 @@
 .hero__image-icecream {
   position: absolute;
   z-index: 1;
+
   @media screen and (max-width: 767px) {
     top: 9px;
     left: 81px;
   }
+
   @media screen and (min-width: 768px) {
     right: 110px;
     bottom: -28px;
