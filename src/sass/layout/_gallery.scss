@@ -11,13 +11,14 @@
 
 .gallery__row {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 /* Create two equal columns that sits next to each other */
 .gallery__column {
   padding: 0 4px;
   align-items: center;
+  justify-content: center;
 }
 
 .gallery__item {
@@ -25,8 +26,17 @@
   vertical-align: middle;
   border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     transform: scale(1.2);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+.gallery__item-girl {
+  border-radius: 20px;
+}
+.gallery__column-5 {
+  margin-bottom: 93px;
+}
+.gallery__column-6 {
+  margin-bottom: 60px;
 }
