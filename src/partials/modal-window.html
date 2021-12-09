@@ -1,0 +1,51 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close" type="button" data-modal-close>
+      <svg class="modal-close__icon">
+        <use href="./images/icons/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal-text">Hello, make your order</p>
+    <form class="form" action="#">
+      <div class="modal-form">
+        <label class="modal-form__label" for="user-name"></label>
+        <input class="modal-form__input" type="text" name="name" id="user-name" placeholder="Name">
+      </div>
+      <div class="modal-form">
+        <label class="modal-form__label" for="user-phone"></label>
+        <input class="modal-form__input" type="tel" name="phone" id="user-phone" placeholder="Phone">
+      </div>
+      <div class="modal-form">
+        <label class="modal-form__label" for="user-email"></label>
+        <input class="modal-form__input" type="email" name="email" id="user-email" placeholder="E-Mail">
+      </div>
+      <div class="modal-form">
+        <label class="modal-form__label" for="icecream"></label>
+        <input class="modal-form__input" list="ice-cream" name="icecream" id="icecream"
+          placeholder="Choose your IceCream" />
+        <datalist id="ice-cream">
+          <option>SOFT SERVE</option>
+          <option>DIPPED ICE CREAM</option>
+          <option>SUNDAE</option>
+          <option>FROZEN CUSTARD</option>
+          <option>GELATO</option>
+          <option>SHERBET</option>
+          <option>SORBET</option>
+          <option>FRO-YO</option>
+          <option>ICE-CREAM FLOAT</option>
+          <option>SHAVE ICE</option>
+        </datalist>
+      </div>
+      <div class="modal-form">
+        <label class="modal-form__label" for="icecream"></label>
+        <input class="modal-form__input" type="number" name="quantity" id="icecream" placeholder="Enter quantity" />
+      </div>
+      <button class="modal-button" type="submit">
+        <svg class="modal-button__icon">
+          <use href="./images/icons/sprite.svg#icon-modal-submit"></use>
+        </svg>
+      </button>
+  </div>
+  </form>
+</div>
+</div>

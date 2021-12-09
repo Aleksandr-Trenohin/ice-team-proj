@@ -1,0 +1,53 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &:nth-child(5) {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-form__input {
+  outline: none;
+  border-color: transparent;
+  border-radius: 20px;
+  padding: 10px 0 10px 20px;
+
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 14px;
+    color: var(--accent-color);
+    @media screen and (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.modal-form__label {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-family: "Titan One", cursive;
+  text-shadow: 1px 1px 1px #000;
+}
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  line-height: 0;
+}
+
+.modal-button__icon {
+  width: 100px;
+  height: 100px;
+  fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
