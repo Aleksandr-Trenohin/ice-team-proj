@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon" />
+    <title>IceCream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon" />
-  <title>IceCream</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/about-modal.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-window.html"></include>
 
-<body>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  <include src="./partials/header.html"></include>
-  <include src="./partials/mobile-menu.html"></include>
-  <main>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/about-modal.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-  </main>
-  <include src="./partials/footer.html"></include>
-  <include src="./partials/modal-window.html"></include>
+    <!-- Open mobile-menu -->
+    <script src="./open-mobile-menu.js"></script>
 
-  <!-- Open mobile-menu -->
-  <script src="./open-mobile-menu.js"></script>
+    <!-- Open modal-window -->
+    <script src="./open-modal.js"></script>
 
-  <!-- Open modal-window -->
-  <script src="./open-modal.js"></script>
+    <!-- About -->
+    <script src="./js/about-modal.js"></script>
 
-  <!-- About -->
-  <script src="./js/about-modal.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./swiper.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script src="./swiper.js"></script>
+    <!-- Contacts -->
+    <script src="./js/contact-popup.js"></script>
+    <script src="./js/franchise-popup.js"></script>
 
-  <!-- Contacts -->
-  <script src="./js/contact-popup.js"></script>
-  <script src="./js/franchise-popup.js"></script>
-
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script src="./index.js"></script>
-</body>
-
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
 </html>
