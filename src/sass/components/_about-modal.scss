@@ -26,7 +26,8 @@
 
   text-align: center;
   overflow-y: scroll;
-  height: 555px;
+  height: calc(100vh - 55px);
+
   padding-top: 33px;
   padding-right: 33px;
   padding-bottom: 33px;
@@ -43,14 +44,13 @@
   }
   @media screen and (max-width: 767px) {
     width: calc(100vw - 30px);
-    height: calc(100vh - 65px);
   }
   @media screen and (min-width: 768px) {
     width: 700px;
+    // height: 555px;
   }
   @media screen and (min-width: 1280px) {
     width: 1050px;
-    height: 655px;
   }
 }
 
